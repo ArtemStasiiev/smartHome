@@ -1,0 +1,255 @@
+.App {
+  text-align: center;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(73, 79, 82);
+  color: white;
+  font-size: 20px;
+}
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+.homeCon{
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeConInside{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.homeConInsideLeft{
+  width: 45%;
+  background-image: url(./Rooms/image.jpg);
+  background-size: cover;
+}
+.homeConInsideRight{
+  width: 45%;
+  font-size: 18px;
+  color: gray;
+}
+.heading{
+  color: gray;
+}
+.hallCon{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hallConInside{
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.bulb{
+  color: gray;
+  font-size: 200px;
+  position: relative;
+}
+.bulbPercentage{
+  color: white;
+  font-weight: bold;
+  position: relative;
+  bottom: 160px;
+  font-size: 30px;
+}
+.hallConInsideLeft{
+  width: 45%;
+}
+.hallConInsideRight{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bulbRange, .conditionareRange{
+  width: 80%;
+  height: 15px;
+  -webkit-appearance: none;
+  background-color: gray;
+  border-radius: 10px;
+  outline: none;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,58,54,1) 35%, rgba(0,212,255,1) 100%);
+}
+.conditionareRange{
+  width: 100%;
+  background: linear-gradient(90deg, rgba(36,25,222,1) 0%, rgba(219,149,126,1) 50%, rgba(222,23,23,1) 100%)
+}
+.bulbRange::-webkit-slider-thumb,
+.conditionareRange::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 3px 18px rgba(0, 0, 100, 0.6);
+}
+.livingRoomCon{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.livingRoomConInside{
+  height: 80%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.livingRoomConInsideLeft{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.livingRoomConInsideRight{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fan{
+  color: gray;
+  font-size: 200px;
+}
+.conditionerRangeCon{
+  width: 80%;
+  height: 50%;
+}
+.conditionerRangeConUp{
+  display: flex;
+  justify-content: space-between;
+}
+.lowTemp {
+  color: blue;
+  font-size: 30px;
+}
+.highTemp{
+  color: red;
+  font-size: 30px;
+}
+.conditionerRangeConDown{
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+.temperatureCon{
+  width: 20%;
+}
+.tempDisplay{
+  font-size: 40px;
+  color: gray;
+  font-weight: bold;
+}
+.react-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.react-switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  background: grey;
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+}
+.react-switch-label .react-switch-button {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+  background: rgb(119, 119, 238)
+
+}
+.react-switch-label:active .react-switch-button {
+  width: 60px;
+}
+.bedroomCon{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bedroomConInside{
+  height: 80%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.bedroomConInsideLeft{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lockIcon{
+  font-size: 200px;
+  color: gray;
+}
+.bedroomConInsideRight{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.doorOpen, .doorClosed, .switchCon{
+  width: 30%;
+  height: 100%;
+}
+.doorOpen{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.doorClosed{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.switchCon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.doorOpenIcon{
+  font-size: 80px;
+  color: gray;
+}
+.doorClosedIcon{
+  font-size: 80px;
+  color: blue;
+}
